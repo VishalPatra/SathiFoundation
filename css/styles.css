@@ -11297,7 +11297,9 @@ html {
 
 body {
   height: 100%;
+  width: 100%;
   position: relative;
+  background-image: url("../assets/img/bg-mobile-fallback.jpg");
 }
 body:before {
   content: "";
@@ -11340,6 +11342,7 @@ video.bg-video {
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 .masthead:before {
   content: "";

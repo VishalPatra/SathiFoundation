@@ -1,0 +1,43 @@
+/*--------------------------------------------------------------
+# Steps
+--------------------------------------------------------------*/
+.steps {
+    padding-top: 20px;
+  }
+  .steps .row {
+    overflow: hidden;
+  }
+  .steps .content-item {
+    padding: 1rem;
+    border-left: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin: -1px;
+    max-width: 100%;
+  }
+  .steps .content-item span {
+    display: block;
+    font-size: 24px;
+    font-weight: 400;
+    color: #00763f;
+  }
+  .steps .content-item h4 {
+    font-size: 28px;
+    font-weight: 400;
+    padding: 0;
+    margin: 20px 0;
+    color: #2d405f;
+  }
+  .steps .content-item p {
+    color: #aaaaaa;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+  }
+  @media (max-width: 768px) {
+    .steps .content-item {
+      padding: 40px 0;
+    }
+  }
+  .stepsimg{
+      max-width: inherit;
+  }

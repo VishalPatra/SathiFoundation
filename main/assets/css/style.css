@@ -1781,7 +1781,7 @@ section {
   background: #e6573f;
 }
 #footer .footer-top {
-  background: url('assets/img/background/wraper-footer-main-bg.png') center bottom repeat-x, url('assets/img/background/wraper-footer-main-bg.png') center bottom repeat-x #332c24;
+  background: url('/assets/img/background/wraper-footer-main-bg.png') center bottom repeat-x, url('/assets/img/background/wraper-footer-main-bg.png') center bottom repeat-x #332c24;
   border-top: 1px solid #474747;
   border-bottom: 1px solid #474747;
   padding: 60px 0 30px 0;

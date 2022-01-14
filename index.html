@@ -1,92 +1,414 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>SATHI FOUNDATION</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body>
-        <!-- Background Video
-        <video class="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src="assets/mp4/bg.mp4" type="video/mp4" /></video>-->
-        <!-- Masthead-->
-        <div class="masthead">
-            <img src="assets/img/coming.png" class="coming">
-            <div class="masthead-content text-white">
-                <div class="container-fluid px-4 px-lg-0 my-4">
-                    <img src="assets/img/logo.png.png" height="50%" width="50%" >
-                    <h1 class="fst-italic lh-1 mb-4">Welcome To SATH-I Foundation</h1>
-                    <p class="mb-5">Sustainable Agriculture Towards Healthy India (SATHI), founded in 2021,
-                        is a Food &amp; Health based NGO located in Purulia, &amp; West Medinipur, West
-                        Bengal India. Food &amp; Health are the most and only important issue in this
-                        world. Our primary focus is to sustainable livelihoods for a healthy India.
-                        We work for a better future where agriculture &amp; allied, Health, scientific
-                        research, knowledge dissemination, community engagement and policy
-                        advocacy are put together to achieve sustainable development of India.!</p>
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- * * SB Forms Contact Form * *-->
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- This form is pre-integrated with SB Forms.-->
-                    <!-- To make this form functional, sign up at-->
-                    <!-- https://startbootstrap.com/solution/contact-forms-->
-                    <!-- to get an API token!-->
-                    <form id="contactForm" data-sb-form-api-token="API_TOKEN" style="display: none;">
-                        <!-- Email address input-->
-                        <div class="row input-group-newsletter">
-                            <div class="col"><input class="form-control" id="email" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
-                            <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button></div>
-                        </div>
-                        <div class="invalid-feedback mt-2" data-sb-feedback="email:required">An email is required.</div>
-                        <div class="invalid-feedback mt-2" data-sb-feedback="email:email">Email is not valid.</div>
-                        <!-- Submit success message-->
-                        <!---->
-                        <!-- This is what your users will see when the form-->
-                        <!-- has successfully submitted-->
-                        <div class="d-none" id="submitSuccessMessage">
-                            <div class="text-center mb-3 mt-2">
-                                <div class="fw-bolder">Form submission successful!</div>
-                                To activate this form, sign up at
-                                <br />
-                                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                            </div>
-                        </div>
-                        <!-- Submit error message-->
-                        <!---->
-                        <!-- This is what your users will see when there is-->
-                        <!-- an error submitting the form-->
-                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
-                    </form>
-                    
-                </div>
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Sathi Foundation </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.ico" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/sathi.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:sathingo.2021@gmail.com">sathingo.2021@gmail.com</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+91 8918226265</span></i>
+      </div>
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+       <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>-->
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <div class="logo">
+       <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+      </div>
+      <h2> SATHI Foundation</h2>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li class="dropdown"><a href="about.html"><span>About</span> <i class="bi bi-chevron-down"></i></a>
+           <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            </ul></li>
+          <li><a  href="activities.html">Activites</a></li>
+          <li><a class="disabled" href="publication.html">Publication</a></li>
+          <li><a href="gallery.html">Media</a></li>
+         <!-- <li><a href="services.html">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>-->
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background: url(assets/img/slide/slide-4.jpg)">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Welcome to <span>SATHI Foundation</span></h2>
+                <p class="animate__animated animate__fadeInUp">Sustainable Agriculture Towards Healthy India (SATHI), founded in 2021, is an Agriculture & Health based NGO located at Purulia & Medinipur, West Bengal, India. Our primary focus is sustainable agriculture and livelihood towards healthy India. SATHI is a name of conviction in the Agriculture and Health circle through its work, passion and dedication.</p>
+                <a href="/about" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+              </div>
             </div>
-        </div>
-        <!-- Social Icons-->
-        <!-- For more icon options, visit https://fontawesome.com/icons?d=gallery&p=2&s=brands-->
-        <div class="social-icons" style="display:none;">
-            <div class="d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0">
-                <a class="btn btn-dark m-3" href="#!"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-dark m-3" href="#!"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-dark m-3" href="#!"><i class="fab fa-instagram"></i></a>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background: url(assets/img/slide/slide-5.jpg)">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated fanimate__adeInDown">Ecology&<span>Environment</span></h2>
+                <p class="animate__animated animate__fadeInUp">Ecology is the totality or patterns of relations between organisms and their environment
+                  It seeks to understand the vital connections between plants and animals and the world around them. Ecology also provides information about the benefits of ecosystems and how we can use Earth’s resources in ways that leave the environment healthy for future generations
+                  </p>
+                <a href="/about" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+              </div>
             </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background: url(assets/img/slide/slide-6.jpg)">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown">Livelihoods &<span> Natural Resource Management</span></h2>
+                <p class="animate__animated animate__fadeInUp">No amount of effort can actually make natural resource management possible unless communities are engaged and there comes the role of sustainable livelihood. There are many ways of conservation of natural resource; sustainable livelihood is one of them</p>
+                <a href="/about" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Featured Section ======= -->
+    <section id="featured" class="featured">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Activities</h2>
+          <p>Sustainable Agriculture Towards Healthy India (SATHI), founded in 2021, is an Agriculture & Health based NGO located at Purulia & Medinipur, West Bengal, India. Our primary focus is sustainable agriculture and livelihood towards healthy India. SATHI is a name of conviction in the Agriculture and Health circle through its work, passion and dedication. We work for a better future where scientific research, knowledge dissemination, community engagement and policy advocacy are put together to achieve sustainable agriculture as well as development of healthy India.</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 mt-4 mt-lg-0">
+            <div class="icon-box">
+              <i class="bi bi-recycle"></i>
+              <h3><a href="">Sustainable Agriculture</a></h3>
+              <p>Satisfy the needs of humankind for healthy food, to improve the quality of environment, to maintain the natural resources base, to use non-renewable and on-farm resources in the most effective way, to implement the natural biological cycles and to support rural economic development as well as the quality of farmers’ life.</p>
+            </div>
+          </div>
+            <div class="col-lg-3 mt-4 mt-lg-0">
+              <div class="icon-box">
+                <i class="bi bi-patch-plus"></i>
+                <h3><a href="">Health & Health Education</a></h3>
+                <p>Health and health education is most crucial, it’s a continuous process which we should follow in each and every steps of our life.  The purpose of health education is to positively influence the health behaviour of individuals and communities as well as the living and working conditions that influence their health.</p>
+              </div>
+            </div>
+          <div class="col-lg-3 mt-4 mt-lg-0">
+            <div class="icon-box">
+              <i class="bi bi-mortarboard"></i>
+              <h3><a href="">Education & Awareness</a></h3>
+              <p>Environmental education has an effective role in creating healthy awareness and preparing suitable environment for the development and maintenance of human minds. Environmental education prepares the individual to become able to balance between his vital needs and the natural environment that provides spiritual, aesthetical and ethical sources for many communities.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 mt-4 mt-lg-0">
+            <div class="icon-box">
+              <i class="bi bi-binoculars"></i>
+              <h3><a href="">Climate Smart Agriculture and Livelihood</a></h3>
+              <p>Climate Smart Agriculture promotes practices and produces grown organically, providing a sustainable balance of carbon footprint and less carbon sequestration. Using regenerative agriculture promotion, SATHI Foundation has been working on farmer livelihood development</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Featured Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-title">
+          <h2>About Us</h2>
+          <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="assets/img/vector2.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content">
+            <h3>Our Objectives</h3>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> To ensure adequate, qualitative, preventive & curative health care to people of the Nation</li>
+              <li><i class="bi bi-check-circle"></i> Satisfy human food and fibre needs.</li>
+              <li><i class="bi bi-check-circle"></i> To ensure health care services to all particularly to the disadvantaged groups like scheduled tribes, scheduled castes & back ward classes. </li>
+              <li><i class="bi bi-check-circle"></i> Sustain the economic viability of farm operations.</li>
+              <li><i class="bi bi-check-circle"></i> Enhance the quality of life for farmers and society as a whole. </li>
+            </ul>
+        
+          </div>
+        </div>
+        <div class="row pt-lg-2">
+          <div class="col-lg-6 pt-4 pt-lg-0 content">
+            <h3>Our Mission</h3>
+            <p class="fst-italic">
+              A nation where no one will be on an empty stomach, Everyone’s health will be good, agriculture as well as development will be sustainable
+
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+            </ul>
+            <h3>Our Vision </h3>
+            <p class="fst-italic">
+              Delivering primary health and food aid to each and every pour, helpless & backward communities
+              Sustainable agriculture for the benefit of humanity         
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <img src="assets/img/vector1.png" class="img-fluid" alt="" style="height:400px; padding-left: 5rem;">
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+<!-- ======= Steps Section ======= -->
+<section id="steps" class="steps" style="display: flex;">
+  <div class="container">
+    <div class="section-title">
+      <h2>Gallery</h2>
+    </div>
+    <div class="row no-gutters" data-aos="fade-up">
+
+      <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="100">
+        <img src="assets/img/step/img1.jpg" alt="" class="stepsimg">
+      </div>
+
+      <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="200">
+        <img src="assets/img/step/img2.jpg" alt="" class="stepsimg">
+      </div>
+
+      <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="300">
+        <img src="assets/img/step/img3.jpg" alt="" class="stepsimg">
+      </div>
+
+      <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="300">
+        <img src="assets/img/step/img4.jpg" alt="" class="stepsimg">
+      </div>
+      <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="300">
+        <img src="assets/img/step/img6.jpg" alt="" class="stepsimg">
+      </div>
+      <div class="col-lg-4 col-md-6 content-item" data-aos="fade-up" data-aos-delay="300">
+        <img src="assets/img/step/img7.jpg" alt="" class="stepsimg">
+      </div>
+
+
+    </div>
+
+  </div>
+</section><!-- End Steps Section -->
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>With Collabration of</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+   <!---  <div class="footer-newsletter">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h4>Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+          </div>
+          <div class="col-lg-6">
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>-->
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="/">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/about">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/publication">Publication</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/gallery">Media</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+<!-- ======= Facebook Section ======= -->
+<section id="facebook" class="fbbox">
+  <div class="fb-page" data-href="https://www.facebook.com/sathifoundation.org.in/" data-tabs="timeline,events" data-width="" data-height="350" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/sathifoundation.org.in/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/sathifoundation.org.in/">SATHI Foundation</a></blockquote></div>
+</section>
+<!-- End Facebook Section -->
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              <strong> Registered office:</strong> <br>Manbhum College More, Jharbagda, Manbazar, Purulia, 723131 WB<br>
+              <strong> Correspondence office:</strong><br> Anandanagar, Dharma, (Near Midnapur Children Hospital) West Medinipur, 721101 WB <br>
+              <strong>Phone:</strong> +91 8918226265<br>
+              <strong>Email:</strong> sathingo.2021@gmail.com<br>
+            </p>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>About Sathi Foundation</h3>
+            <p>Sustainable Agriculture Towards Healthy India (SATHI), founded in 2021, is an Agriculture & Health based NGO located at Purulia & Medinipur, West Bengal <br>We work for a better future where scientific research, knowledge dissemination, community engagement and policy advocacy are put together to achieve sustainable agriculture as well as development of India.</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Sathi Foundation</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/Sathi Foundation-free-multipurpose-bootstrap-template/ -->
+        Designed by <a href="https://github.com/vishalpatra">Vishal Patra</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v12.0" nonce="wDadX3lw"></script>
+
+</body>
+
 </html>
